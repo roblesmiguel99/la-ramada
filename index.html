@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Ramada — Mexican Family Restaurant, Milton-Freewater OR</title>
+<meta name="description" content="La Ramada Mexican Family Restaurant in Milton-Freewater, OR. Dine-in, to-go, catering, and Family Dinners for celebrations. Open daily.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/rye-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--
+  THESIS: The whole site is the family's own comal — char, steam, and ember
+  heat carry the page, because the food should look like it is still cooking.
+  OWN-WORLD: cast-iron black ground (#141210), char umber, ember orange
+  (#e06a22) and butter-yellow accents; seasoned-iron sheen, char striping,
+  steam haze; Rye display over Archivo body; grill-mark seams between sections.
+  STORY: a first-time visitor sees sizzling, abundant food immediately,
+  believes La Ramada is a real family kitchen worth trusting, and reaches
+  the menu and Family Dinners within seconds.
+  FIRST VIEWPORT: full-bleed comal hero, steam rising through the headline,
+  today's Family Dinner seared into a branding-iron badge with its price,
+  primary CTA straight to the full menu.
+  FORM: The Comal — IMPECCABLE'S PICK, direction round seed 84e62924 (reroll 1).
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the
+  finish review, the verdict, and DESIGN.md
+-->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="char-edge" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.02" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">La <span>Ramada</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#dinners">Family Dinners</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+      <a class="header-phone" href="tel:+15419383508" aria-label="Call La Ramada at (541) 938-3508">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2C9.4 22 2 14.6 2 6a2 2 0 0 1 2-2Z"/></svg>
+        <span>(541) 938-3508</span>
+      </a>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-panel" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <ul>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="#dinners">Family Dinners</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="tel:+15419383508">Call (541) 938-3508</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero iron-ground">
+    <div class="char-stripes" aria-hidden="true"></div>
+    <div class="hero-ember-glow" aria-hidden="true"></div>
+    <div class="steam" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <h1>Fired hot.<br>Served family-style.</h1>
+          <p class="lede">La Ramada is a Mexican family restaurant in Milton-Freewater, Oregon, still cooking to order — dine-in, to-go, and full Family Dinner spreads built to feed a table.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-ember" href="menu.html">
+              View the Full Menu
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-line" href="tel:+15419383508">Call to Order</a>
+          </div>
+        </div>
+        <div class="hero-visual sear-in">
+          <svg class="sizzle-plate" viewBox="0 0 440 380" role="img" aria-label="Illustration of a sizzling fajita platter — steak, peppers, and onions on the comal">
+            <defs>
+              <linearGradient id="steakGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#c9591c"/>
+                <stop offset="1" stop-color="#8f3d14"/>
+              </linearGradient>
+              <radialGradient id="panGlow" cx="50%" cy="42%" r="60%">
+                <stop offset="0" stop-color="#e06a22" stop-opacity="0.28"/>
+                <stop offset="1" stop-color="#e06a22" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="220" cy="200" r="170" fill="url(#panGlow)"/>
+            <circle cx="220" cy="200" r="164" fill="#0b0a09" stroke="#4d3020" stroke-width="9"/>
+            <circle cx="220" cy="200" r="154" fill="none" stroke="#e06a22" stroke-width="1.5" opacity="0.35"/>
+            <g stroke-linecap="round">
+              <g transform="translate(168,150) rotate(-18)">
+                <rect x="-52" y="-11" width="104" height="22" rx="10" fill="url(#steakGrad)" stroke="#3a2418" stroke-width="3"/>
+                <line x1="-24" y1="-9" x2="-14" y2="9" stroke="#2a1a10" stroke-width="4"/>
+                <line x1="6" y1="-9" x2="16" y2="9" stroke="#2a1a10" stroke-width="4"/>
+              </g>
+              <g transform="translate(258,140) rotate(14)">
+                <rect x="-50" y="-11" width="100" height="22" rx="10" fill="url(#steakGrad)" stroke="#3a2418" stroke-width="3"/>
+                <line x1="-22" y1="-9" x2="-12" y2="9" stroke="#2a1a10" stroke-width="4"/>
+                <line x1="8" y1="-9" x2="18" y2="9" stroke="#2a1a10" stroke-width="4"/>
+              </g>
+              <g transform="translate(196,215) rotate(-6)">
+                <rect x="-58" y="-12" width="116" height="24" rx="11" fill="url(#steakGrad)" stroke="#3a2418" stroke-width="3"/>
+                <line x1="-28" y1="-10" x2="-16" y2="10" stroke="#2a1a10" stroke-width="4"/>
+                <line x1="4" y1="-10" x2="16" y2="10" stroke="#2a1a10" stroke-width="4"/>
+              </g>
+              <g transform="translate(276,222) rotate(24)">
+                <rect x="-48" y="-11" width="96" height="22" rx="10" fill="url(#steakGrad)" stroke="#3a2418" stroke-width="3"/>
+                <line x1="-20" y1="-9" x2="-10" y2="9" stroke="#2a1a10" stroke-width="4"/>
+              </g>
+              <g transform="translate(224,278) rotate(-14)">
+                <rect x="-54" y="-11" width="108" height="22" rx="10" fill="url(#steakGrad)" stroke="#3a2418" stroke-width="3"/>
+                <line x1="-24" y1="-9" x2="-14" y2="9" stroke="#2a1a10" stroke-width="4"/>
+                <line x1="8" y1="-9" x2="18" y2="9" stroke="#2a1a10" stroke-width="4"/>
+              </g>
+            </g>
+            <g stroke-linecap="round">
+              <g transform="translate(150,255) rotate(42)"><rect x="-36" y="-7" width="72" height="14" rx="7" fill="#f4c244" stroke="#3a2418" stroke-width="2"/></g>
+              <g transform="translate(300,190) rotate(-34)"><rect x="-34" y="-7" width="68" height="14" rx="7" fill="#e06a22" stroke="#3a2418" stroke-width="2"/></g>
+              <g transform="translate(214,128) rotate(58)"><rect x="-32" y="-7" width="64" height="14" rx="7" fill="#8faf3e" stroke="#3a2418" stroke-width="2"/></g>
+              <g transform="translate(292,268) rotate(10)"><rect x="-30" y="-6" width="60" height="12" rx="6" fill="#f4c244" stroke="#3a2418" stroke-width="2"/></g>
+            </g>
+            <g fill="none" stroke="#f3ead9" stroke-width="2.5" opacity="0.75">
+              <ellipse cx="184" cy="182" rx="15" ry="6.5" transform="rotate(20 184 182)"/>
+              <ellipse cx="248" cy="258" rx="13" ry="6" transform="rotate(-25 248 258)"/>
+              <ellipse cx="200" cy="240" rx="12" ry="5.5" transform="rotate(45 200 240)"/>
+            </g>
+            <g fill="none" stroke="#f3ead9" stroke-linecap="round" opacity="0.4">
+              <path d="M172,92 C160,64 186,50 176,18" stroke-width="4"/>
+              <path d="M222,86 C232,56 206,46 216,12" stroke-width="4"/>
+              <path d="M268,100 C280,74 258,60 268,30" stroke-width="4"/>
+            </g>
+          </svg>
+          <div class="hero-visual-caption">
+            <div class="hero-visual-caption-shape" aria-hidden="true"></div>
+            <div class="hero-visual-caption-inner">
+              <h3>Cielo, Mar y Tierra <span class="price">$95</span></h3>
+              <p class="note">Tonight's Family Dinner — carne asada, grilled chicken &amp; shrimp, call ahead for pickup.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="grill-seam iron-ground" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 30 Q 30 10 60 30 T 120 30 T 180 30 T 240 30 T 300 30 T 360 30 T 420 30 T 480 30 T 540 30 T 600 30 T 660 30 T 720 30 T 780 30 T 840 30 T 900 30 T 960 30 T 1020 30 T 1080 30 T 1140 30 T 1200 30" fill="none" stroke="var(--ember-dim)" stroke-width="1.5" opacity="0.6"/></svg>
+  </div>
+
+  <section id="dinners" class="iron-ground">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Family Dinners &amp; Catering</h2>
+        <p class="lede">Ordered ahead and built to share — for birthdays, celebrations, and the nights nobody wants to cook.</p>
+      </div>
+
+      <div class="grill-rack">
+        <div class="grill-rack-featured">
+          <svg class="sear-mark" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17c4-6 4 6 8 0s4 6 8 0"/></svg>
+          <div>
+            <h3>Cielo, Mar y Tierra <span class="price-line">$95</span></h3>
+            <p>Carne asada, grilled chicken, and shrimp — sky, sea, and land on one order.</p>
+          </div>
+        </div>
+        <div class="grill-rack-list">
+          <div class="grill-rack-row">
+            <span class="name">Camarones</span>
+            <span class="desc">2 lbs. camarones caguameros, marinated in our spicy sour secret recipe.</span>
+            <span class="price tabular">$55</span>
+          </div>
+          <div class="grill-rack-row">
+            <span class="name">Enchiladas</span>
+            <span class="desc">10 or 20 enchiladas, served with rice and beans.</span>
+            <span class="price tabular">$35 / $60</span>
+          </div>
+          <div class="grill-rack-row">
+            <span class="name">Tacos</span>
+            <span class="desc">20 tacos, your choice of steak or chicken.</span>
+            <span class="price tabular">$55</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dinners-photos">
+        <figure>
+          <img src="assets/photos/family-dinners-camarones.jpg" alt="A tray of camarones caguameros — grilled shrimp over lettuce, tomato, cucumber, red onion, and avocado, ready for pickup." loading="lazy" width="750" height="1000">
+          <figcaption>Camarones, packed and ready</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/photos/family-dinners-enchiladas.jpg" alt="A full tray of enchiladas with rice and beans on the side, the actual La Ramada to-go menu card resting beside it." loading="lazy" width="750" height="1000">
+          <figcaption>Enchiladas, family-size</figcaption>
+        </figure>
+      </div>
+
+      <div class="dinners-note">
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Birthday parties</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Celebrations</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Catering</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Orders to-go</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="iron-ground">
+    <div class="wrap">
+      <div class="section-head-row">
+        <div class="section-head" style="margin-bottom:0;">
+          <h2>From the kitchen</h2>
+          <p class="lede">A taste of what's on the full menu — appetizers, house specials, and more.</p>
+        </div>
+        <a class="btn btn-line" href="menu.html">See the full menu</a>
+      </div>
+
+      <div class="menu-teaser-grid">
+        <div class="menu-row">
+          <span><span class="name">Molcajete Mi Gusto Es</span><span class="desc">Charbroiled steak, chicken &amp; chorizo, green sauce, roasted pepper, Mexican cheese, rice, beans, avocado.</span></span>
+          <span class="price tabular">$26.75</span>
+        </div>
+        <div class="menu-row">
+          <span><span class="name">Camarones Mango Habanero</span><span class="desc">Shrimp in lime juice with mango habanero sauce, onion, mango, cucumber, avocado.</span></span>
+          <span class="price tabular">$21.75</span>
+        </div>
+        <div class="menu-row is-new">
+          <span><span class="name">Ribeye</span><span class="desc">10 oz. certified Angus, grilled. Served with rice, beans, guacamole, tortillas.</span></span>
+          <span class="price tabular">$28.75</span>
+        </div>
+        <div class="menu-row">
+          <span><span class="name">Fajitas Rancheras</span><span class="desc">Chicken or beef with shrimp, wrapped with bacon, mushrooms, onions, peppers.</span></span>
+          <span class="price tabular">$23.25</span>
+        </div>
+        <div class="menu-row">
+          <span><span class="name">Birria</span><span class="desc">Tender beef chunks simmered in La Ramada's secret recipe. Rice, beans, tortillas.</span></span>
+          <span class="price tabular">$20.25</span>
+        </div>
+        <div class="menu-row">
+          <span><span class="name">Chile Relleno</span><span class="desc">Fresh pasilla pepper stuffed with cheese, grilled to a golden brown.</span></span>
+          <span class="price tabular">$11.75</span>
+        </div>
+      </div>
+
+      <div class="menu-cta">
+        <a class="btn btn-ember" href="menu.html">View the Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="grill-seam iron-ground" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0 30 Q 30 50 60 30 T 120 30 T 180 30 T 240 30 T 300 30 T 360 30 T 420 30 T 480 30 T 540 30 T 600 30 T 660 30 T 720 30 T 780 30 T 840 30 T 900 30 T 960 30 T 1020 30 T 1080 30 T 1140 30 T 1200 30" fill="none" stroke="var(--ember-dim)" stroke-width="1.5" opacity="0.6"/></svg>
+  </div>
+
+  <section class="iron-ground">
+    <div class="wrap review-block">
+      <div class="stars" aria-hidden="true">
+        <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.8 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg>
+        <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.8 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg>
+        <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.8 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg>
+        <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.8 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg>
+        <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.8 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg>
+      </div>
+      <p class="review-quote">La Ramada went above and beyond for me today! GREAT food and compassionate people! Thank you so much for your kindness and service!</p>
+      <p class="review-attrib">Kami Wagoner <span>· Google Review</span></p>
+    </div>
+  </section>
+
+  <section id="visit" class="iron-ground">
+    <div class="char-stripes" aria-hidden="true" style="opacity:0.28;"></div>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Visit La Ramada</h2>
+      </div>
+      <figure class="visit-photo">
+        <img src="assets/photos/la-ramada-entrance-1.jpg" alt="The brick archway inside La Ramada, hand-tiled in Talavera pattern, leading past a framed painting into the dining room." loading="lazy" width="1200" height="900">
+      </figure>
+      <div class="visit-grid">
+        <div >
+          <h3>Hours</h3>
+          <table class="hours-table">
+            <tbody>
+              <tr data-hours-day="0"><td>Sunday</td><td class="tabular">10:00 AM – 10:00 PM</td></tr>
+              <tr data-hours-day="1"><td>Monday</td><td class="tabular">10:00 AM – 10:00 PM</td></tr>
+              <tr data-hours-day="2"><td>Tuesday</td><td class="tabular">10:00 AM – 10:00 PM</td></tr>
+              <tr data-hours-day="3"><td>Wednesday</td><td class="tabular">10:00 AM – 10:00 PM</td></tr>
+              <tr data-hours-day="4"><td>Thursday</td><td class="tabular">10:00 AM – 10:00 PM</td></tr>
+              <tr data-hours-day="5"><td>Friday</td><td class="tabular">10:00 AM – 11:00 PM</td></tr>
+              <tr data-hours-day="6"><td>Saturday</td><td class="tabular">10:00 AM – 11:00 PM</td></tr>
+            </tbody>
+          </table>
+          <p class="hours-status" data-hours-status><span class="dot" aria-hidden="true"></span> Checking hours…</p>
+        </div>
+        <div >
+          <h3>Find us</h3>
+          <div class="contact-list">
+            <a href="https://www.google.com/maps/search/?api=1&query=190+S+Main+St%2C+Milton-Freewater%2C+OR+97862" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <span>190 S Main St<span class="sub">Milton-Freewater, OR 97862 — get directions</span></span>
+            </a>
+            <a href="tel:+15419383508">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2C9.4 22 2 14.6 2 6a2 2 0 0 1 2-2Z"/></svg>
+              <span>(541) 938-3508<span class="sub">Call ahead for Family Dinners &amp; catering</span></span>
+            </a>
+          </div>
+          <ul class="services-tags">
+            <li>Dine-in</li>
+            <li>To-go</li>
+            <li>Birthday parties</li>
+            <li>Celebrations</li>
+            <li>Catering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer iron-ground">
+  <div class="wrap">
+    <a class="footer-brand" href="index.html">
+      <img src="assets/photos/logo.png" alt="La Ramada Mexican Family Restaurant logo" width="500" height="167">
+      <span class="logo">La Ramada</span>
+    </a>
+    <p class="footer-meta">
+      <span>190 S Main St, Milton-Freewater, OR 97862</span>
+      <a href="tel:+15419383508">(541) 938-3508</a>
+      <span>&copy; <span id="year"></span> La Ramada Mexican Family Restaurant</span>
+    </p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/LaRamadaMF" target="_blank" rel="noopener" aria-label="La Ramada on Facebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4h-2a4 4 0 0 0-4 4v3H7v3h2v6h3v-6h2.5l.5-3H12V8a1 1 0 0 1 1-1h2Z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>

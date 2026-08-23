@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-23T05:10:00Z",
+  "title": "Design System: La Ramada",
+  "extensions": {
+    "colorMeta": {
+      "iron-black": { "role": "neutral", "displayName": "Iron Black", "canonical": "#141210", "tonalRamp": ["#0b0a09", "#141210", "#1e1b18", "#2c2823", "#4d4740", "#75695f", "#a89c8f", "#e3d9cb"] },
+      "iron-black-deep": { "role": "neutral", "displayName": "Iron Black Deep", "canonical": "#0b0a09", "tonalRamp": ["#000000", "#0b0a09", "#151210", "#221e1a", "#413a32", "#6b6055", "#9b8f80", "#d6cabb"] },
+      "char-umber": { "role": "neutral", "displayName": "Char Umber", "canonical": "#3a2418", "tonalRamp": ["#140d08", "#241710", "#3a2418", "#5a3a26", "#7a4f34", "#a3714f", "#c99b76", "#e9cdb2"] },
+      "ember-orange": { "role": "primary", "displayName": "Ember Orange", "canonical": "#e06a22", "tonalRamp": ["#3d1c08", "#6b3010", "#a3491a", "#e06a22", "#ea8a4f", "#f2a877", "#f8c6a5", "#fce3d2"] },
+      "ember-bright": { "role": "primary", "displayName": "Ember Bright", "canonical": "#ff8c47", "tonalRamp": ["#4a2410", "#7d3d18", "#c05f24", "#ff8c47", "#ffa66e", "#ffbf95", "#ffd8bc", "#ffefe1"] },
+      "ember-dim": { "role": "primary", "displayName": "Ember Dim", "canonical": "#a8461a", "tonalRamp": ["#2e1207", "#4f1f0c", "#7a3213", "#a8461a", "#c56a3f", "#d99169", "#ecba9c", "#f9e2d2"] },
+      "butter": { "role": "secondary", "displayName": "Butter", "canonical": "#f4c244", "tonalRamp": ["#4a3806", "#7a5c0a", "#b68d16", "#f4c244", "#f7d174", "#fadfa0", "#fceccb", "#fef8ec"] },
+      "cream": { "role": "neutral", "displayName": "Cream", "canonical": "#f3ead9", "tonalRamp": ["#3a3327", "#615645", "#948570", "#c7b79c", "#e3d8c4", "#f3ead9", "#f8f2e6", "#fcf9f2"] },
+      "cream-dim": { "role": "neutral", "displayName": "Cream Dim", "canonical": "#cbbfa8", "tonalRamp": ["#2f291f", "#55493a", "#7c6c56", "#a4917566", "#cbbfa8", "#dcd4c3", "#ede8dd", "#f7f4ee"] },
+      "cream-faint": { "role": "neutral", "displayName": "Cream Faint", "canonical": "#8d8375", "tonalRamp": ["#211e19", "#3c362e", "#5c5449", "#8d8375", "#a89e8e", "#c3bbae", "#ded9d0", "#f2efeb"] },
+      "lime": { "role": "tertiary", "displayName": "Lime", "canonical": "#8faf3e", "tonalRamp": ["#242e0f", "#3f501b", "#657c2c", "#8faf3e", "#a7c368", "#c0d691", "#daeabb", "#f0f6dd"] },
+      "lime-bright": { "role": "tertiary", "displayName": "Lime Bright", "canonical": "#a7c957", "tonalRamp": ["#2b3512", "#4a5c20", "#748a34", "#a7c957", "#bad677", "#cee3a0", "#e2f0c8", "#f4f9e6"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display (Rye)", "purpose": "h1 hero headlines only — the whole page's one branding-iron voice." },
+      "headline": { "displayName": "Headline (Rye)", "purpose": "h2 section titles." },
+      "title": { "displayName": "Title (Rye)", "purpose": "h3 — plaque, card, and menu-category titles." },
+      "body": { "displayName": "Body (Archivo)", "purpose": "All prose, menu items, prices, form and nav text." },
+      "label": { "displayName": "Label (Archivo, bold)", "purpose": "Nav links, service tags, the NEW badge — never a kicker above a heading." }
+    },
+    "shadows": [
+      { "name": "button-glow", "value": "0 10px 26px -12px rgba(224,106,34,0.65)", "purpose": "Primary ember button only; brightens on hover." },
+      { "name": "illustration-lift", "value": "drop-shadow(0 22px 34px rgba(0,0,0,0.5))", "purpose": "The hero sizzling-platter SVG illustration." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Default easing for all transitions and the sear-in keyframe." },
+      { "name": "sear-in", "value": "1.1s var(--ease-out) 0.5s both, scale 0.94→1 + brightness 2.6→1 + blur 2px→0", "purpose": "One-time load animation for the hero illustration's caption plaque — the system's single authored entrance moment." },
+      { "name": "steam-rise", "value": "6.5–8.5s ease-in infinite, translateY(-260%) + opacity 0→.85→.35→0", "purpose": "Continuous ambient steam wisps scoped to the hero headline column." },
+      { "name": "ember-breathe", "value": "7s ease-in-out infinite, scale 1→1.05 + opacity .85→1", "purpose": "Slow ambient pulse on the hero's ember glow gradient." }
+    ],
+    "breakpoints": [
+      { "name": "nav", "value": "780px" },
+      { "name": "content-sm", "value": "640px" },
+      { "name": "content-md", "value": "980px" },
+      { "name": "menu-columns", "value": "780px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The site's one call-to-action color; used for View the Full Menu / Call to Order.",
+      "html": "<a class=\"ds-btn-ember\" href=\"#\">View the Full Menu</a>",
+      "css": ".ds-btn-ember { display: inline-flex; align-items: center; gap: 0.55rem; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 1rem; padding: 0.85rem 1.6rem; border-radius: 6px; border: 1px solid transparent; background: #e06a22; color: #0b0a09; box-shadow: 0 10px 26px -12px rgba(224,106,34,0.65); text-decoration: none; cursor: pointer; transition: transform .15s cubic-bezier(.16,1,.3,1), background .2s, box-shadow .2s; } .ds-btn-ember:hover, .ds-btn-ember:focus-visible { background: #ff8c47; box-shadow: 0 14px 30px -10px rgba(255,140,71,0.55); } .ds-btn-ember:active { transform: translateY(1px); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quiet companion action beside the primary ember button.",
+      "html": "<a class=\"ds-btn-line\" href=\"#\">Call to Order</a>",
+      "css": ".ds-btn-line { display: inline-flex; align-items: center; gap: 0.55rem; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 1rem; padding: 0.85rem 1.6rem; border-radius: 6px; background: transparent; color: #f3ead9; border: 1px solid rgba(243,234,217,0.24); text-decoration: none; cursor: pointer; transition: border-color .2s, color .2s; } .ds-btn-line:hover, .ds-btn-line:focus-visible { border-color: #e06a22; color: #ff8c47; }"
+    },
+    {
+      "name": "Menu Row",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "The recurring content unit for every dish across both pages: name + description left, price in Butter right, divided by a hairline rule, warms on hover — no card shell.",
+      "html": "<div class=\"ds-menu-row\"><span><span class=\"ds-name\">Molcajete Mi Gusto Es</span><span class=\"ds-desc\">Charbroiled steak, chicken &amp; chorizo, green sauce, rice, beans, avocado.</span></span><span class=\"ds-price\">$26.75</span></div>",
+      "css": ".ds-menu-row { display: grid; grid-template-columns: 1fr auto; gap: 0.875rem; align-items: baseline; padding: 0.875rem; border-bottom: 1px solid rgba(243,234,217,0.14); transition: background .2s cubic-bezier(.16,1,.3,1); font-family: 'Archivo', sans-serif; } .ds-menu-row:hover, .ds-menu-row:focus-within { background: rgba(224,106,34,0.06); } .ds-name { display: block; font-weight: 700; color: #f3ead9; } .ds-desc { display: block; font-size: 0.87rem; color: #8d8375; margin-top: 0.2rem; } .ds-price { font-family: 'Rye', serif; color: #f4c244; font-size: 1.15rem; white-space: nowrap; }"
+    },
+    {
+      "name": "Grill Rack (Featured + List)",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Signature Family Dinners layout: one shared plaque holding a featured full-width dish plus a compact row list — replaces a same-size card grid on purpose.",
+      "html": "<div class=\"ds-grill-rack\"><div class=\"ds-featured\"><h3>Cielo, Mar y Tierra <span class=\"ds-price-inline\">$95</span></h3><p>Carne asada, grilled chicken, and shrimp.</p></div><div class=\"ds-row\"><span class=\"ds-name\">Camarones</span><span class=\"ds-price\">$55</span></div></div>",
+      "css": ".ds-grill-rack { border-radius: 6px; background: linear-gradient(165deg, rgba(255,255,255,0.03), transparent 40%), #0b0a09; border: 1px solid rgba(243,234,217,0.14); overflow: hidden; font-family: 'Archivo', sans-serif; } .ds-featured { padding: 2.5rem; border-bottom: 1px solid rgba(243,234,217,0.14); background: radial-gradient(ellipse 70% 100% at 0% 0%, rgba(224,106,34,0.10), transparent 60%); } .ds-featured h3 { font-family: 'Rye', serif; display: flex; gap: 0.875rem; align-items: baseline; color: #f3ead9; font-size: 1.75rem; } .ds-price-inline { font-family: 'Rye', serif; color: #f4c244; font-size: 0.85em; } .ds-row { display: flex; justify-content: space-between; padding: 0.875rem 2.5rem; border-bottom: 1px solid rgba(243,234,217,0.14); } .ds-row .ds-price { font-family: 'Rye', serif; color: #f4c244; }"
+    },
+    {
+      "name": "Site Header / Nav",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Sticky translucent header; ember underline marks the active/hovered link.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-logo\" href=\"#\">La <span>Ramada</span></a><nav><a href=\"#\" class=\"ds-active\">Menu</a><a href=\"#\">Family Dinners</a><a href=\"#\">Visit</a></nav></header>",
+      "css": ".ds-header { position: sticky; top: 0; background: rgba(11,10,9,0.86); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(243,234,217,0.14); padding: 0.85rem 1.5rem; display: flex; justify-content: space-between; align-items: center; font-family: 'Archivo', sans-serif; } .ds-logo { font-family: 'Rye', serif; font-size: 1.5rem; color: #f3ead9; text-decoration: none; } .ds-logo span { color: #ff8c47; } .ds-header nav a { color: #cbbfa8; text-decoration: none; font-weight: 600; margin-left: 1.5rem; padding-bottom: 0.4rem; border-bottom: 2px solid transparent; } .ds-header nav a:hover, .ds-header nav a.ds-active { color: #f3ead9; border-color: #e06a22; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Family Comal",
+    "overview": "The site is the restaurant's own cast-iron comal, not a brand built to sit beside it. Everything — ground, dividers, motion, the featured-dish plaque — is drawn from the surface a family actually cooks on: seasoned iron gone near-black, ember heat glowing at the edges, steam rising off whatever is cooking now. This is a Persuade surface for a small-town Mexican family restaurant (Milton-Freewater, OR); the visual language exists to make the food look like it's still sizzling, not to look like a design system. The system rejects two nearby defaults on purpose: the flag-color-and-clipart 'Mexican restaurant' template, and the inverse overcorrection into upscale minimalist 'elevated Mexican' branding. Food is shown as authored line-art illustration rather than stock or placeholder photography — no real photos exist yet, and faking photographic material would be a worse lie than an honest illustration.",
+    "keyCharacteristics": [
+      "Near-black cast-iron ground with ember-orange and butter-yellow as the only saturated colors",
+      "A display face built for branding, not typesetting — used sparingly, at scale",
+      "Depth from warm radial ember glow and soft blur, never a generic drop shadow",
+      "One recurring signature device: an organic charred/torn edge on plaques, made with an SVG turbulence filter",
+      "Motion is ambient and singular — steam rising through the hero headline, plus quiet hover states — never a repeated scroll-reveal on every section"
+    ],
+    "rules": [
+      { "name": "The One Price Color Rule", "body": "Butter (#f4c244) is the only color a price is ever set in, on every page, every context.", "section": "colors" },
+      { "name": "The Rye-Everywhere Rule", "body": "Every heading tag (h1/h2/h3), on both pages, is set in Rye. A page with a mixed display face is off-system.", "section": "typography" },
+      { "name": "The Ember-Only Glow Rule", "body": "Every soft shadow or glow in the system is ember-orange tinted. A neutral gray shadow anywhere on this site is off-system.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep Butter (#f4c244) as the only price color, everywhere, on every page.",
+      "Do set every heading in Rye; never substitute a system font as a temporary display face.",
+      "Do tint every shadow/glow ember-orange; never use a neutral gray shadow.",
+      "Do show food as authored line-art/SVG illustration in the system's own palette when no real photography exists.",
+      "Do keep the charred-edge SVG filter reserved for the one or two plaques meant to read as branded/stamped."
+    ],
+    "donts": [
+      "Don't put a kicker or eyebrow label above any heading, anywhere on this site.",
+      "Don't build a row of same-size icon+heading+text cards as page structure; use the grill-rack pattern instead.",
+      "Don't isolate a price as a giant standalone stat. Prices sit inline with the dish name at title scale.",
+      "Don't repeat the same scroll-triggered fade/slide-up entrance on every section.",
+      "Don't fake photographic material with a CSS gradient or bevel standing in for a photo."
+    ]
+  }
+}
