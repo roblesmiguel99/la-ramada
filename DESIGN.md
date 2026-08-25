@@ -158,8 +158,14 @@ The signature shape is the **charred edge**: an SVG filter (`feTurbulence` + `fe
 
 ### Cards / Containers
 - **Corner style:** 6px radius; iron-black-deep background; 1px `rule` border at rest.
-- **Signature exception:** the featured-dish plaque (hero caption, Family Dinners featured row) uses the charred-edge SVG filter instead of a clean radius — see Shapes.
+- **Signature exception — the charred quote:** the hero caption, the Family Dinners featured row, and standalone pull-quotes (About's tagline) all use the charred-edge SVG filter instead of a clean radius — see Shapes. Reused via `.charred-quote` for any future standalone-quote use; kept to pull-quotes and featured-dish plaques, never applied to ordinary containers.
 - **Grill-rack:** the Family Dinners section is one shared plaque (not a card grid) containing one larger featured row plus a compact list of standard rows, divided by 1px rules, never repeated as same-size cards.
+
+### Page Hero (interior pages)
+A quieter cousin of the homepage hero, used on Catering and About: the same iron-ground/char-stripe material and Rye display headline, but no steam animation and only a small ember-glow accent — that motion stays reserved for the homepage's own first viewport. Pairs a headline/lede/CTA column with a single real photo (`.page-hero-photo`, 6px radius, object-fit: cover). Menu and Gallery instead use the quieter `.menu-page-head` (centered headline, no photo column) since their content itself is the visual.
+
+### Gallery Grid
+A lead full-bleed photo (`.gallery-lead`) followed by a 3-column grid (`.gallery-grid`, collapsing to 2 then 1) of real photos, each with a plain factual caption on a gradient scrim. Photos link to their own full-size file rather than opening a lightbox — deliberately simple. Grid tolerates any photo count without redesign.
 
 ### Menu Rows (signature component)
 The recurring content unit across both pages: a two- or three-column row (name + description on the left, price in Butter on the right, an optional numeral for combination plates), divided by a 1px `rule`, background warming to `rgba(224,106,34,0.06)` on hover/focus-within. No borders, no per-row card shells — density comes from the rule, not a container.

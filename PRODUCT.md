@@ -45,9 +45,9 @@ Scrubbed from the incumbent site, https://laramadamilton.com/ (content only, not
   - Tacos — $55 (20 tacos, steak or chicken)
 - Customer review: "La Ramada went above and beyond for me today! GREAT food and compassionate people! Thank you so much for your kindness and service!" — Kami Wagoner, 5/5 stars, Google Review
 
-**On hand:** the full à la carte menu (retrieved from the old site's linked PDF and transcribed in full — appetizers, lunch specials, carnes, pollo, mariscos, house specials, burritos, enchiladas, vegetarian, combinations, sides, drinks, kids, burgers). The logo (`assets/photos/logo.png`) and three real photos — two Family Dinners trays (camarones, enchiladas) and one interior entrance shot — scraped from laramadamilton.com and in use on the built site (`assets/photos/`).
+**On hand:** the full à la carte menu (retrieved from the old site's linked PDF and transcribed in full — appetizers, lunch specials, carnes, pollo, mariscos, house specials, burritos, enchiladas, vegetarian, combinations, sides, drinks, kids, burgers). The logo (`assets/photos/logo.png`) and nine real photos scraped from laramadamilton.com and in use on the built site (`assets/photos/`): two Family Dinners trays (camarones, enchiladas), and seven interior shots — the entrance archway, the host stand, the bar, two dining-room/booth views, a cactus centerpiece, and the agave/prep-counter corner — used across the homepage, Catering, and Gallery pages.
 
-**Not on hand — do not fabricate:** additional interior/food photography beyond the three in use (the old site has a handful more interior shots, not yet pulled in), and any drink/beverage photography.
+**Not on hand — do not fabricate:** any drink/beverage photography, and confirmation of business ownership structure (the name "Mexican Family Restaurant" is a style descriptor, not a documented ownership fact — do not describe La Ramada as "family-owned" or "family-run" without an explicit confirmation).
 
 ## Product Principles
 1. Menu-first: the shortest path for a visitor is to the menu — this was confirmed as the primary desired action.
