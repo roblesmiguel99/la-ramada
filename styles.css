@@ -554,6 +554,8 @@ section { padding-block: var(--space-6); }
 }
 
 .menu-cta { margin-top: var(--space-4); text-align: center; }
+.page-end { padding-bottom: var(--space-6); }
+@media (max-width: 640px) { .page-end { padding-bottom: var(--space-5); } }
 
 /* full menu page */
 .menu-toc {
