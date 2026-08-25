@@ -38,6 +38,10 @@
   --lime: #8faf3e;
   --lime-bright: #a7c957;
   --butter: #f4c244;
+  /* sampled directly from the restaurant's own photos: the ceramic planter
+     tile and the live plants — used only to distinguish category tags */
+  --talavera-blue: #3356a8;
+  --agave-green: #3b7b2f;
   --cream: #f3ead9;
   --cream-dim: #cbbfa8;
   --cream-faint: #8d8375;
@@ -517,7 +521,9 @@ section { padding-block: var(--space-6); }
 }
 .dinners-note ul { display: flex; flex-wrap: wrap; gap: 0.5rem 1.4rem; }
 .dinners-note li { display: flex; align-items: center; gap: 0.5rem; color: var(--cream-dim); font-weight: 600; font-size: 0.95rem; }
-.dinners-note li svg { width: 16px; height: 16px; stroke: var(--lime-bright); flex-shrink: 0; }
+.dinners-note li svg { width: 16px; height: 16px; stroke: var(--ember-orange); flex-shrink: 0; }
+.dinners-note li:nth-child(3n+2) svg { stroke: var(--talavera-blue); }
+.dinners-note li:nth-child(3n+3) svg { stroke: var(--agave-green); }
 
 /* ==========================================================================
    Menu preview (index) + full menu list (menu.html)
@@ -653,6 +659,9 @@ section { padding-block: var(--space-6); }
   font-weight: 600;
   color: var(--cream-dim);
 }
+.services-tags li:nth-child(3n+1) { border-color: color-mix(in srgb, var(--ember-orange) 55%, var(--rule-strong)); }
+.services-tags li:nth-child(3n+2) { border-color: color-mix(in srgb, var(--talavera-blue) 55%, var(--rule-strong)); }
+.services-tags li:nth-child(3n+3) { border-color: color-mix(in srgb, var(--agave-green) 55%, var(--rule-strong)); }
 
 /* ==========================================================================
    Footer

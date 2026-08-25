@@ -95,6 +95,9 @@ Two saturated colors carry the whole system against a near-black iron ground; ev
 ### Secondary
 - **Butter** (#f4c244): every price, without exception. One color means "this is a number you'll pay," consistently, site-wide.
 
+### Tertiary — category accents
+- **Talavera Blue** (#3356a8) and **Agave Green** (#3b7b2f): sampled directly from pixels in the restaurant's own photos (the ceramic planter tile, the live plants), not invented. Used only as a functional 3-way cycle with Ember Orange to distinguish items in a list of categories — the "What we offer" / "Occasions we cater" pill tags and the Family Dinners checkmark list. Never used decoratively on their own; never applied to a button, price, or any element outside a category list.
+
 ### Neutral
 - **Iron Black** (#141210): the page ground. Everything sits on this.
 - **Iron Black Deep** (#0b0a09): recessed surfaces — cards, the header, the footer, the grill-rack plaque, the illustration's pan.
@@ -105,6 +108,8 @@ Two saturated colors carry the whole system against a near-black iron ground; ev
 
 ### Named Rules
 **The One Price Color Rule.** Butter (#f4c244) is the only color a price is ever set in, on every page, every context. A visitor should be able to find "the number" on any screen without reading.
+
+**The Grounded Accent Rule.** Any color beyond ember/butter/neutral must be sourced from real material already at the restaurant (a photo, a menu fact) and assigned to a real functional role (categorization, a specific dish, a specific place) — never added as unattached decoration. A prior attempt at a purely decorative multi-color accent (a "garland" motif on the section dividers) was rejected by the user specifically for feeling ungrounded; this rule exists because of that.
 
 ## Typography
 
