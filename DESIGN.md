@@ -77,10 +77,11 @@ The site is the restaurant's own cast-iron comal, not a brand built to sit besid
 The system rejects two nearby defaults on purpose: the flag-color-and-clipart "Mexican restaurant" template (red/green/white blocking, stock cactus/sombrero art), and the inverse overcorrection into upscale minimalist "elevated Mexican" branding. Neither belongs to a family-run kitchen in an agricultural valley. Food is shown as authored line-art illustration (steak strips, peppers, onions, steam) rather than stock or placeholder photography — no real photos exist yet, and faking photographic material would be a worse lie than an honest illustration.
 
 **Key Characteristics:**
-- Near-black cast-iron ground with ember-orange and butter-yellow as the only saturated colors
+- Near-black cast-iron ground with ember-orange and butter-yellow as the only saturated colors carrying real surface area
 - A display face built for branding, not typesetting — used sparingly, at scale
 - Depth from warm radial ember glow and soft blur, never a generic drop shadow
 - One recurring signature device: an organic charred/torn edge on plaques, made with an SVG turbulence filter, not a clean rounded rect
+- A small papel picado garland of pink/teal/violet/butter beads strung along the section dividers — the system's one deliberate, contained note of festive multi-color, never spent anywhere else
 - Motion is ambient and singular — steam rising through the hero headline, plus quiet hover states — never a repeated scroll-reveal on every section
 
 ## Colors
@@ -94,6 +95,9 @@ Two saturated colors carry the whole system against a near-black iron ground; ev
 
 ### Secondary
 - **Butter** (#f4c244): every price, without exception. One color means "this is a number you'll pay," consistently, site-wide.
+
+### Tertiary — the papel picado garland
+- **Papel Pink** (#d94f8c), **Papel Teal** (#159e93), **Papel Violet** (#8b5fbf): three accents used nowhere but the small beads strung along the grill-seam section dividers, cycling with Butter to read as a strung papel picado garland rather than a UI accent. This is the system's one deliberate departure from "two saturated colors + neutral ink," and it's confined on purpose — these three never appear on a button, a price, a card, or any interactive element.
 
 ### Neutral
 - **Iron Black** (#141210): the page ground. Everything sits on this.
